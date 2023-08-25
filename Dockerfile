@@ -1,6 +1,4 @@
-FROM pypy:latest
-WORKDIR /app
-COPY requirements.txt /app
-RUN pypy -m pip install --no-cache-dir -r requirements.txt
-COPY . /app
-CMD pypy inventory_2.py
+FROM python:3.8
+ADD invertory_2.py
+run pip install tabulate
+CMD["python", ./inventory_2.py]
