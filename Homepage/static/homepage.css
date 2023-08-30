@@ -1,0 +1,13 @@
+body{
+  background: linear-gradient(to bottom, black, purple);
+}
+
+h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    color: white;
+    font-family: cursive;
+}

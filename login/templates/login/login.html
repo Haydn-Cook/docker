@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <h1>
+        Welcome to the user registration page
+    </h1>
+    <form action="{% url 'create_user' %}" method="post">
+        {% csrf_token %}
+        <label style="color: white;">username</label>
+        <input type="text" name="username" placeholder="user">
+        <label style="color: white;">password</label>
+        <input type="password" name="password" placeholder="password">
+        <a href="http://127.0.0.1:8000/"><button type="submit">Create User</button></a>
+    </form>
+    <a href="login_user/">Login</a>
+</body>
+</html>

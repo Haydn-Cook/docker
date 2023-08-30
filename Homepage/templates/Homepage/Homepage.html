@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'Homepage.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>
+                    Welcome to the Home Page of Everyday Sneakers
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <a href="/login/login_create"><button type="button" class="btn btn-primary">Login and Create user</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="{% static 'logo.jpg'%}" class="img-thumbnail" alt="">
+            </div>
+            <div class="col-md-9">
+                <p>
+                    Welcome to Everyday Sneakers, your ultimate destination for stylish and comfortable footwear! At Everyday Sneakers, we 
+                    understand that footwear is not just an accessory; it's a vital part of your daily routine. Our online store is dedicated 
+                    to offering a curated collection of sneakers that effortlessly blend fashion with functionality, making them suitable for 
+                    your everyday adventures.
+                </p>
+                <p>
+                    Discover a diverse range of sneakers that cater to all tastes and preferences. Whether you're a trendsetter looking for the
+                     latest designs or someone who values timeless classics, we have something for everyone. Our carefully selected lineup
+                      features a variety of colors, materials, and styles, ensuring that you'll find the perfect pair to match your unique 
+                      personality and lifestyle.
+                </p>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <p>
+                    We prioritize both style and comfort, which is why we partner with reputable brands known for their quality craftsmanship
+                     and innovative technologies. Each pair of sneakers at Everyday Sneakers is designed to provide exceptional support,
+                      cushioning, and durability, so you can confidently step into your day, no matter where it takes you.
+                </p>
+                <p>
+                    Navigating our user-friendly website, you'll find detailed product descriptions, size guides, and customer reviews to help
+                     you make the best choice. Our commitment to customer satisfaction extends beyond just the sale we offer hassle-free
+                      returns and exchanges, ensuring that you're completely satisfied with your purchase.
+                </p>
+                <p>
+                    Whether you're exploring the city streets, hitting the gym, or simply spending time with friends, let Everyday Sneakers be
+                     your go-to online shoe store for footwear that effortlessly combines style and comfort. Upgrade your shoe game with us 
+                     today!
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="{% static 'img10.jpg'%}" alt="">
+            </div>
+        </div>
+        <h1>
+            Why Choose our website?
+        </h1>
+        <p>
+            Choose Everyday Sneakers for footwear that fuses style and comfort seamlessly. Our curated collection features a variety of trendy
+             designs and timeless classics to suit your unique taste. With top-notch brands known for quality, each step you take will be 
+             supported by durability and cushioning. Don't compromise step into a world where every day is stylish and comfortable with 
+             Everyday Sneakers.
+        </p>
+        <p>
+            Elevate your shoe game with Everyday Sneakers. We're not just an online store we're your partner in finding the perfect footwear
+             for your daily adventures. Our commitment to excellence means you'll discover a range of options meticulously chosen for their 
+             style, durability, and comfort. Say goodbye to sacrificing one for the other at Everyday Sneakers, you can confidently stride
+              ahead knowing that your feet are embraced in both fashion and ease.
+        </p>
+        <h1>
+            Blog reviews!!
+        </h1>
+        <p>
+            Add blogs here to speak of your experience with our store, may it be online of an experience from one of our stores!
+            Blogs could also be written to provide helpful shoe info or tips for all users to see.
+            REMEMBER to login before creating a blog.
+        </p>
+        <a href="{% url 'blog' %}" class="btn btn-primary">Add and view blogs for website</a>
+    </div>
+</body>
+</html>

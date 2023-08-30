@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Add Blog Here!
+    </h1>
+    <h3>
+        Make sure you are signed in before making blog
+    </h3>
+    <form method="post">
+        {% csrf_token %}
+        <label style="color: white;" for="user">User ID:</label>
+        <input type="number" name="user" required><br>
+        <br>
+        <label style="color: white;" for="blog_title">Blog Title:</label>
+        <input type="text" name="blog_title" required><br>
+        <br>
+        <label style="color: white;" for="body">Body:</label>
+        <textarea name="body" required></textarea><br>
+        <br>
+        <button type="submit">Add Blog Post</button>
+    </form>
+</body>
+</html>
